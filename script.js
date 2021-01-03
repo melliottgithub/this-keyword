@@ -57,6 +57,6 @@ anthony.calcAge(); // this points to the object from the method that was called!
 
 const f = mike.calcAge;
 console.log(f);
-f(); // undefined ==> f function is not attached to an object. We are just invoking a regular function.
+// f(); // undefined ==> f function is not attached to an object. We are just invoking a regular function.
 
-/* Regular functions vs Arrow functions */
+/* Regular functions vs Arrow functions coming soon */
