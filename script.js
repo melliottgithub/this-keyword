@@ -14,6 +14,8 @@
     **** Next section ===> new keyword, call(), bind(), apply() this keyword with those!
 */
 
+/* this gives methods access to their objects and execute same code for multiple objects! */
+
 console.log(this); //Global object ===> window!
 
 const calcAge = function (birthYear) {
@@ -52,3 +54,9 @@ console.log(anthony); // {year: 1995, calcAge: ƒ}
 console.log(mike); // {year: 1990, calcAge: ƒ} 
 
 anthony.calcAge(); // this points to the object from the method that was called!
+
+const f = mike.calcAge;
+console.log(f);
+f(); // undefined ==> f function is not attached to an object. We are just invoking a regular function.
+
+/* Regular functions vs Arrow functions */
